@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+/* LEFT */
+.left {
+    width: 25vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* RIGHT */
+.right {
+    width: 75vw;
+    position: relative;
+}
+
+/* HOME */
+.home ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home ul li img {
+    width: 20px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+/* LIBRARY */
+.library {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: end;
+    gap: 10px;
+    padding: 10px;
+    font-size: 11px;
+    
+   
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* HEADER */
+.header {
+    margin: 16px;
+    background-color: #121212;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;   /* 👈 yahi change hai */
+    margin: 5px 0;
+}
+
+
+/* CARDS */
+.cardContainer {
+    margin: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #252525;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #2a2a2a;
+    transform: scale(1.05);
+}
+
+.img-box {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.big-play {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #1db954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .big-play {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* PLAYBAR */
+/* PLAYBAR */
+.playbar {
+    position: absolute;
+    bottom: 0px; /* thoda niche like Spotify */
+    left: 50%;
+    transform: translateX(-50%); /* center align */
+
+    width: 65%; /* not full — premium look */
+    max-width: 900px;
+
+    background-color: #181818; /* Spotify dark */
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px; /* less rounded like Spotify */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+
+    z-index: 1000;
+    width: 96%;}
+
+/* SONG INFO */
+.songinfo {
+    color: white;
+    width: 250px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+.songbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 40%;
+}
+
+/* side buttons */
+#prevBtn,
+#nextBtn {
+    width: 22px;
+}
+
+/* center play button */
+
+.songbuttons img {
+    width: 26px;
+        cursor: pointer;
+        color: white;
+        transition: 0.2s;
+}
+
+.songtime {
+    color: white;
+    width: 25%;
+    text-align: right;
+}
+
+.songbuttons img:hover {
+    transform: scale(1.15);
+    filter: invert(1) drop-shadow(0 0 5px #1db954);
+}
+
+/* ✅ FIXED PROGRESS BAR */
+.progressbar {
+    position: absolute;
+    bottom: 6px; /* thoda upar */
+    left: 5%;
+    width: 90%; /* side gap */
+    height: 2px; /* thin */
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+
+    /* smooth wave */
+    background: linear-gradient(
+        90deg,
+        #1db954,
+        #1ed760,
+        #1db954
+    );
+
+    background-size: 150% 100%;
+    animation: waveMove 2s linear infinite;
+}
+
+@keyframes waveMove {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 150% 0;
+    }
+}
+
+/* SONG LIST */
+.songList ul {
+    padding: 10px;
+}
+
+.songItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.songItem:hover {
+    background: #1f1f1f;
+}
+
+.leftPart {
+    display: flex;
+    gap: 10px;
+}
+
+.leftPart img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.rightPart {
+    display: flex;
+    gap: 10px;
+}
+
+.rightPart img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.pausebuttons img {
+    width: 20px;
+}
+
+/* Scrollbar (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* dark background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5a5a5a; /* grey color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* lighter on hover */
+}
+
+.progressbar {
+    cursor: pointer;
+}
+
+.progressbar:hover {
+    height: 6px;
+    transition: 0.2s;
+}
+
+#prevBtn,
+#nextBtn {
+    width: 22px;
+    background: #ffffff;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+#playBtn2 {
+    width: 22px; /* bigger */
+    border-radius: 4px;
+    background-color: rgb(30, 28, 28);
+    color: black;
+
+}
+
+@media (max-width: 1400px) {
+    .left{
+        width: 30vw;
+    }
+}
+
+.timevol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    width: 30%;
+}
+
+
+.playbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* left | center | right */
+    align-items: center;
+}
+
+.songinfo {
+    justify-self: start;
+}
+
+.songbuttons {
+    justify-self: center;
+}
+
+.timevol {
+    justify-self: end;   /* 🔥 ye right push karega */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.songtime {
+    width: auto;  /* remove fixed width */
+}
+
+#volume {
+    width: 90px;
+}
