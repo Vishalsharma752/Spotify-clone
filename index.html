@@ -2,62 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Spotify - Web Player</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
 </head>
 <body>
-
-<div class="container flex bg-black">
-
-    <!-- LEFT -->
-    <div class="left border">
-
+<div class="container">
+    <div class="left">
         <div class="home bg-grey rounded m-1 p-1">
-            <div class="logo">
-                <img class="invert" src="logo.svg"> Spotify
-            </div>
+            <div class="logo"><img class="invert" src="logo.svg" alt="Spotify"> Spotify</div>
             <ul>
-                <li><img class="invert" src="home.svg"> Home</li>
-                <li><img class="invert" src="search.svg"> Search</li>
+                <li class="active"><img class="invert" src="home.svg" alt=""> Home</li>
+                <li><img class="invert" src="search.svg" alt=""> Search</li>
             </ul>
         </div>
-
         <div class="library bg-grey rounded m-1 p-1">
             <div class="heading">
-                <img class="invert" src="download.svg">
+                <img class="invert" src="download.svg" alt="">
                 <h2>Your Library</h2>
                 <span class="plus">+</span>
             </div>
-
-            <div class="songList">
-                <ul></ul>
-            </div>
+            <div class="songList"><ul></ul></div>
         </div>
-
-        <!-- FOOTER -->
         <div class="footer">
-            <a href="#">Legal</a>
-            <a href="#">Privacy Center</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookies</a>
-            <a href="#">About Ads</a>
-            <a href="#">Accessibility</a>
+            <a href="#">Legal</a><a href="#">Privacy Center</a><a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a><a href="#">About Ads</a><a href="#">Accessibility</a>
         </div>
-
     </div>
 
-    <!-- RIGHT -->
-    <div class="right border">
-
+    <div class="right">
         <div class="header">
             <div class="nav">
                 <div class="nav-left">
-                    <button>&#10094;</button>
-                    <button>&#10095;</button>
+                    <button aria-label="Back">&#10094;</button>
+                    <button aria-label="Forward">&#10095;</button>
                 </div>
-
                 <div class="nav-right">
                     <button class="signup">Sign up</button>
                     <button class="login">Log in</button>
@@ -65,123 +45,118 @@
             </div>
         </div>
 
-        <!-- PLAYLIST -->
         <div class="spotifyplaylists">
             <h1>Spotify Playlists</h1>
-
             <div class="cardContainer">
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="Bairan.jpg">
-                        <div class="big-play" id="playBtn">▶</div>
-                    </div>
-                    <h3>Bairan</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="BlueEyes.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
-                    </div>
-                    <h3>Blue Eyes</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="chatak.jpg">
-                        <div class="big-play" id="playBtnCard3">▶</div>
-                    </div>
-                    <h3>Chatak Matak</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="ghar.jpg">
-                        <div class="big-play" id="playBtnCard4">▶</div>
-                    </div>
-                    <h3>Ghar Kab aaoge....</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="kya.jpg">
-                        <div class="big-play" id="playBtnCard5">▶</div>
-                    </div>
-                    <h3>Kya Baat Ay</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="Mohtarma.jpg">
-                        <div class="big-play" id="playBtnCard6">▶</div>
-                    </div>
-                    <h3>Mohtarma</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="roots.jpg">
-                        <div class="big-play" id="playBtnCard7">▶</div>
-                    </div>
-                    <h3>Roots</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="Sheesha.jpg">
-                        <div class="big-play" id="playBtnCard8">▶</div>
-                    </div>
-                    <h3>Sheesha</h3>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="white.jpg">
-                        <div class="big-play" id="playBtnCard9">▶</div>
-                    </div>
-                    <h3>White Brown Bla...</h3>
-                </div>
-
+                <div class="card"><div class="img-box"><img src="Bairan.jpg" alt="Bairan"><div class="big-play">&#9654;</div></div><h3>Bairan</h3></div>
+                <div class="card"><div class="img-box"><img src="BlueEyes.jpg" alt="Blue Eyes"><div class="big-play">&#9654;</div></div><h3>Blue Eyes</h3></div>
+                <div class="card"><div class="img-box"><img src="chatak.jpg" alt="Chatak Matak"><div class="big-play">&#9654;</div></div><h3>Chatak Matak</h3></div>
+                <div class="card"><div class="img-box"><img src="ghar.jpg" alt="Ghar Kab Aaoge"><div class="big-play">&#9654;</div></div><h3>Ghar Kab aaoge....</h3></div>
+                <div class="card"><div class="img-box"><img src="kya.jpg" alt="Kya Baat Ay"><div class="big-play">&#9654;</div></div><h3>Kya Baat Ay</h3></div>
+                <div class="card"><div class="img-box"><img src="Mohtarma.jpg" alt="Mohtarma"><div class="big-play">&#9654;</div></div><h3>Mohtarma</h3></div>
+                <div class="card"><div class="img-box"><img src="roots.jpg" alt="Roots"><div class="big-play">&#9654;</div></div><h3>Roots</h3></div>
+                <div class="card"><div class="img-box"><img src="Sheesha.jpg" alt="Sheesha"><div class="big-play">&#9654;</div></div><h3>Sheesha</h3></div>
+                <div class="card"><div class="img-box"><img src="white.jpg" alt="White Brown Black"><div class="big-play">&#9654;</div></div><h3>White Brown Bla...</h3></div>
             </div>
         </div>
 
-        <!-- PLAYBAR -->
         <div class="playbar">
-
             <div class="songinfo">No song playing</div>
-
             <div class="songbuttons">
-                <img id="prevBtn" src="previoussong.svg">
-                <img id="playBtn2" src="play.png">
-                <img id="nextBtn" src="nextsong.svg">
+                <img id="prevBtn" src="previoussong.svg" alt="Previous">
+                <img id="playBtn2" src="play.png" alt="Play/Pause">
+                <img id="nextBtn" src="nextsong.svg" alt="Next">
             </div>
-
             <div class="timevol">
                 <div class="songtime">00:00</div>
-
                 <div class="volume">
-                    <div class="volume-waves">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="volume-icon">
-                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
-                    </div>
+                    <div class="volume-waves"><span></span><span></span><span></span></div>
+                    <div class="volume-icon"><input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1"></div>
                 </div>
             </div>
-
-            <div class="progressbar">
-                <div class="progress"></div>
-            </div>
-
+            <div class="progressbar"><div class="progress"></div></div>
         </div>
-
     </div>
-
 </div>
 
+<nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-btn active" id="mobileHomeBtn">
+        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Home
+    </button>
+    <button class="mobile-nav-btn" id="mobileSearchBtn">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>Search
+    </button>
+    <button class="mobile-nav-btn" id="mobileLibraryBtn">
+        <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/></svg>Library
+    </button>
+    <button class="mobile-nav-btn" id="mobileNowPlayingBtn" style="display:none;">
+        <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>Playing
+    </button>
+</nav>
+
+<div class="mobile-library-panel" id="mobileLibraryPanel">
+    <div class="panel-handle"></div>
+    <h3>Your Library</h3>
+    <div class="songList" id="mobileSongList"><ul></ul></div>
+</div>
+<div class="panel-overlay" id="panelOverlay"></div>
+
 <script src="script.js"></script>
+<script>
+(function(){
+    const isMobile=()=>window.innerWidth<=640;
+    const homeBtn=document.getElementById("mobileHomeBtn");
+    const searchBtn=document.getElementById("mobileSearchBtn");
+    const libBtn=document.getElementById("mobileLibraryBtn");
+    const nowBtn=document.getElementById("mobileNowPlayingBtn");
+    const panel=document.getElementById("mobileLibraryPanel");
+    const overlay=document.getElementById("panelOverlay");
+
+    function setNav(b){document.querySelectorAll(".mobile-nav-btn").forEach(x=>x.classList.remove("active"));if(b)b.classList.add("active");}
+
+    function openLib(){
+        panel.style.display="block";overlay.classList.add("active");
+        requestAnimationFrame(()=>panel.classList.add("open"));
+        syncSongs();
+    }
+    function closeLib(){
+        panel.classList.remove("open");overlay.classList.remove("active");
+        setTimeout(()=>{if(!panel.classList.contains("open"))panel.style.display="none";},350);
+    }
+
+    function syncSongs(){
+        const src=document.querySelector(".left .songList ul");
+        const dst=document.querySelector("#mobileSongList ul");
+        if(!src||!dst)return;
+        dst.innerHTML=src.innerHTML;
+        dst.querySelectorAll(".songItem").forEach((el,i)=>{
+            el.addEventListener("click",()=>{if(typeof playSong==="function")playSong(i);closeLib();setNav(nowBtn);});
+        });
+        dst.querySelectorAll(".likeBtn").forEach(b=>{
+            b.addEventListener("click",e=>{e.stopPropagation();if(typeof toggleLike==="function"){toggleLike(b.dataset.name);syncSongs();}});
+        });
+    }
+
+    homeBtn&&homeBtn.addEventListener("click",()=>{setNav(homeBtn);closeLib();document.querySelector(".right").scrollTo({top:0,behavior:"smooth"});});
+    searchBtn&&searchBtn.addEventListener("click",()=>{setNav(searchBtn);closeLib();const s=document.getElementById("searchInput");if(s){s.focus();s.scrollIntoView({behavior:"smooth",block:"center"});}});
+    libBtn&&libBtn.addEventListener("click",()=>{panel.classList.contains("open")?(closeLib(),setNav(homeBtn)):(openLib(),setNav(libBtn));});
+    nowBtn&&nowBtn.addEventListener("click",()=>{setNav(nowBtn);closeLib();});
+    overlay&&overlay.addEventListener("click",()=>{closeLib();setNav(homeBtn);});
+
+    let ty=0;
+    panel&&panel.addEventListener("touchstart",e=>{ty=e.touches[0].clientY;},{passive:true});
+    panel&&panel.addEventListener("touchend",e=>{if(e.changedTouches[0].clientY-ty>70){closeLib();setNav(homeBtn);}},{passive:true});
+
+    const pb=document.querySelector(".playbar");
+    pb&&nowBtn&&new MutationObserver(()=>{if(pb.classList.contains("active"))nowBtn.style.display="flex";}).observe(pb,{attributes:true,attributeFilter:["class"]});
+
+    const pgbar=document.querySelector(".progressbar");
+    if(pgbar){
+        function st(t){if(typeof audio==="undefined")return;if(!audio.duration)return;const r=pgbar.getBoundingClientRect();audio.currentTime=Math.max(0,Math.min(1,(t.clientX-r.left)/r.width))*audio.duration;}
+        pgbar.addEventListener("touchstart",e=>{e.preventDefault();st(e.touches[0]);},{passive:false});
+        pgbar.addEventListener("touchmove",e=>{e.preventDefault();st(e.touches[0]);},{passive:false});
+    }
+})();
+</script>
 </body>
 </html>
