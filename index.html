@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -88,62 +87,61 @@
                     <h3>Blue Eyes</h3>
                 </div>
 
-                 <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="chatak.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard3">▶</div>
                     </div>
                     <h3>Chatak Matak</h3>
                 </div>
 
-                   <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="ghar.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard4">▶</div>
                     </div>
                     <h3>Ghar Kab aaoge....</h3>
                 </div>
 
- <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="kya.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard5">▶</div>
                     </div>
                     <h3>Kya Baat Ay</h3>
                 </div>
 
-                 <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="Mohtarma.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard6">▶</div>
                     </div>
                     <h3>Mohtarma</h3>
                 </div>
 
-                 <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="roots.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard7">▶</div>
                     </div>
                     <h3>Roots</h3>
                 </div>
 
-                 <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="Sheesha.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard8">▶</div>
                     </div>
                     <h3>Sheesha</h3>
                 </div>
 
-                 <div class="card">
+                <div class="card">
                     <div class="img-box">
                         <img src="white.jpg">
-                        <div class="big-play" id="playBtnCard2">▶</div>
+                        <div class="big-play" id="playBtnCard9">▶</div>
                     </div>
-                    <h3>White Brown Bla... </h3>
+                    <h3>White Brown Bla...</h3>
                 </div>
-
 
             </div>
         </div>
@@ -158,11 +156,20 @@
                 <img id="playBtn2" src="play.png">
                 <img id="nextBtn" src="nextsong.svg">
             </div>
+
             <div class="timevol">
                 <div class="songtime">00:00</div>
 
-            <div class="volume">
-                <img id="volumeBtn" src="volume.svg">
+                <div class="volume">
+                    <div class="volume-waves">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="volume-icon">
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
             </div>
 
             <div class="progressbar">
