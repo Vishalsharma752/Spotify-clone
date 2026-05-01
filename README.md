@@ -1,15 +1,28 @@
-🎧 Spotify Clone
+# 🎧 Spotify Clone – Web Music Player
 
-A simple Spotify-inspired music player built using HTML, CSS, and JavaScript. This project replicates the core UI and basic functionality of Spotify, allowing users to play, pause, and navigate through songs.
+A responsive Spotify-inspired music player built using HTML, CSS, and JavaScript. This project replicates core music player functionalities with an interactive UI and smooth user experience.
 
-🚀 Features
-🎵 Play and pause music
-⏭️ Skip to next / previous tracks
-📃 Song list display
-🎚️ Progress bar with seek functionality
-🔊 Volume control (optional if you added it)
-🎨 Responsive and modern UI inspired by Spotify
-🛠️ Tech Stack
-HTML – Structure of the app
-CSS – Styling and layout
+## 🚀 Features
+- 🎵 Play and pause music  
+- ⏭️ Next and previous track navigation  
+- 📃 Dynamic song list display  
+- 🎚️ Interactive progress bar with seek functionality  
+- 🔊 Volume control  
+- 🎨 Responsive and modern UI design  
+
+## 🛠️ Tech Stack
+- HTML – Structure  
+- CSS – Styling and layout  
+- JavaScript – Functionality and interactivity  
+
+## 💡 Key Highlights
+- Built using pure JavaScript without any frameworks  
+- Focus on clean UI/UX and responsiveness  
+- Optimized for smooth user interaction  
+
+## 🔗 Live Demo
+https://spotify-clone456.netlify.app/
+
+## 💻 GitHub Repository
+https://github.com/Vishalsharma752/Spotify-clone
 JavaScript – Functionality and interactivity
